@@ -20,4 +20,5 @@ Unity UI动画通过布尔变量来转换状态机的模板
 4. 建立一个Button，通过点击触发事件
 
 ![建立一个Button，通过点击触发事件](https://img-blog.csdnimg.cn/20200511200502193.png)
+
 OnClick中前面填入含有”Animator”组件的动画根文件，后面选择UIPanel.AddCount。
