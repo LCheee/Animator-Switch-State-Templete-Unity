@@ -1,0 +1,8 @@
+When you want to do some boring thing like:
+press button—Panel out, press button again—Panel in.
+Here is the templete.
+asy and can be reused in different gameobjects.
+Requirement: Switch condition: bool parameter 
+当你想实现：点一下按钮托盘打开，再点一下按钮托盘收回。这种简单又无聊的事件时可选用的模板。
+特点：操作简单，可重复应用于场景内各种不同物体。 
+要求：状态机转换变量为bool变量。
