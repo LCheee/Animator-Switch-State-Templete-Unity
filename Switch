@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class UIPanel : MonoBehaviour
+{
+    // Start is called before the first frame update
+    Animator animator;
+    public static int Presscount=0;
+    public string parameter_name;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+    
+    // Update is called once per frame
+    
+    void Update()
+    {
+        switch(Presscount)
+        {
+            case 1:
+                animator.SetBool(parameter_name, true);
+                break;
+            case 2:
+                animator.SetBool(parameter_name, false);
+                Presscount=0;
+                break;
+        }
+    }
+    public void AddCount()
+    {
+        Presscount++; 
+        Debug.Log(Presscount);
+    }
+}
